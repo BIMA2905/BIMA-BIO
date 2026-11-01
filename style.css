@@ -246,29 +246,29 @@ nav ul li a:hover{
 
 /* RESPONSIVE */
 
-@media(max-width: 950px){
+@media (max-width: 950px){
 
   .hero{
-    flex-direction: column-reverse;
-    text-align: center;
-    padding-top: 50px;
+    /* Dihapus: flex-direction: column-reverse (agar posisi teks dan foto tetap menyamping) */
+    text-align: left; /* Sesuaikan jika ingin teksnya rata kiri seperti desktop */
+    padding-top: 30px;
   }
 
   .hero-text h1{
-    font-size: 50px;
+    font-size: 36px; /* Ukuran font dikecilkan sedikit agar pas di layar kecil */
   }
 
   .buttons{
-    justify-content: center;
+    justify-content: flex-start; /* Tetap mengikuti posisi desktop */
   }
 
   .social{
-    justify-content: center;
+    justify-content: flex-start; /* Tetap mengikuti posisi desktop */
   }
 
   nav{
-    flex-direction: column;
-    gap: 20px;
+    /* Dihapus: flex-direction: column (agar menu navigasi tetap menyamping) */
+    gap: 15px;
   }
 
 }
