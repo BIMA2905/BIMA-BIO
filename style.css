@@ -1025,5 +1025,15 @@ nav ul li a.active{
   50%{
     border-color: transparent;
   }
-
+/* Mencegah elemen keluar dari layar HP (horizontal scroll) */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
+}
+
+.hero, .about, .projects, .contact, footer {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
