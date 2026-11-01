@@ -1079,9 +1079,15 @@ html, body {
   box-sizing: border-box;
 }
 
-body, html {
-  overflow-x: hidden !important;
-  width: 100% !important;
+html {
+  overflow-x: hidden; /* Mencegah geser ke samping */
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden; /* Mencegah geser ke samping */
+  overflow-y: auto;   /* Memastikan halaman bisa di-scroll ke bawah */
+  width: 100%;
   position: relative;
 }
 
